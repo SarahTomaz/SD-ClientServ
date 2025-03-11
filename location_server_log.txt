@@ -1,0 +1,2 @@
+mar. 10, 2025 8:31:06 PM LocationServer main
+INFO: Servidor de Localização iniciado na porta 8.002

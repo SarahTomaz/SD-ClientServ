@@ -1,0 +1,216 @@
+mar. 10, 2025 8:50:45 PM ApplicationServer inicializarBaseDados
+INFORMAÇÕES: Base de dados inicializada com 100 ordens de serviço.
+mar. 10, 2025 8:50:45 PM ApplicationServer main
+INFORMAÇÕES: Servidor de Aplicação iniciado na porta 8001
+mar. 10, 2025 8:51:37 PM ApplicationServer main
+INFORMAÇÕES: Nova conexão de cliente: 127.0.0.1
+mar. 10, 2025 8:51:37 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: CONSULTAR
+mar. 10, 2025 8:51:37 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: Consultando OS com código: 1
+mar. 10, 2025 8:51:37 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 1 adicionada à cache
+mar. 10, 2025 8:51:37 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 1 encontrada no banco de dados
+mar. 10, 2025 8:51:37 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: CONSULTAR
+mar. 10, 2025 8:51:37 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: Consultando OS com código: 2
+mar. 10, 2025 8:51:37 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 2 adicionada à cache
+mar. 10, 2025 8:51:37 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 2 encontrada no banco de dados
+mar. 10, 2025 8:51:37 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: CONSULTAR
+mar. 10, 2025 8:51:37 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: Consultando OS com código: 3
+mar. 10, 2025 8:51:37 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 3 adicionada à cache
+mar. 10, 2025 8:51:37 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 3 encontrada no banco de dados
+mar. 10, 2025 8:51:37 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: LISTAR
+mar. 10, 2025 8:51:37 PM ApplicationServer$ClientHandler listarOS
+INFORMAÇÕES: Listando todas as OS
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: CADASTRAR
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler cadastrarOS
+INFORMAÇÕES: Cadastrando OS: OS Teste 146
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler cadastrarOS
+INFORMAÇÕES: OS 146 cadastrada com sucesso
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: LISTAR
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler listarOS
+INFORMAÇÕES: Listando todas as OS
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: CADASTRAR
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler cadastrarOS
+INFORMAÇÕES: Cadastrando OS: OS Teste 148
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler cadastrarOS
+INFORMAÇÕES: OS 148 cadastrada com sucesso
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: LISTAR
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler listarOS
+INFORMAÇÕES: Listando todas as OS
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: CONSULTAR
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: Consultando OS com código: 5
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 5 adicionada à cache
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 5 encontrada no banco de dados
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: ALTERAR
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler alterarOS
+INFORMAÇÕES: Alterando OS: 5
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler alterarOS
+INFORMAÇÕES: OS 5 alterada com sucesso
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: LISTAR
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler listarOS
+INFORMAÇÕES: Listando todas as OS
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: CONSULTAR
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: Consultando OS com código: 10
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 10 adicionada à cache
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 10 encontrada no banco de dados
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: REMOVER
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler removerOS
+INFORMAÇÕES: Removendo OS: 10
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler removerOS
+INFORMAÇÕES: OS 10 removida com sucesso
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: LISTAR
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler listarOS
+INFORMAÇÕES: Listando todas as OS
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: CONSULTAR
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: Consultando OS com código: 10
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 10 não encontrada
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: REMOVER
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler removerOS
+INFORMAÇÕES: Removendo OS: 20
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler removerOS
+INFORMAÇÕES: OS 20 removida com sucesso
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: LISTAR
+mar. 10, 2025 8:51:38 PM ApplicationServer$ClientHandler listarOS
+INFORMAÇÕES: Listando todas as OS
+mar. 10, 2025 8:57:33 PM ApplicationServer inicializarBaseDados
+INFORMAÇÕES: Base de dados inicializada com 100 ordens de serviço.
+mar. 10, 2025 8:57:33 PM ApplicationServer main
+INFORMAÇÕES: Servidor de Aplicação iniciado na porta 8001
+mar. 10, 2025 8:57:51 PM ApplicationServer main
+INFORMAÇÕES: Nova conexão de cliente: 127.0.0.1
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: CONSULTAR
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: Consultando OS com código: 1
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 1 adicionada à cache
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 1 encontrada no banco de dados
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: CONSULTAR
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: Consultando OS com código: 2
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 2 adicionada à cache
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 2 encontrada no banco de dados
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: CONSULTAR
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: Consultando OS com código: 3
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 3 adicionada à cache
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 3 encontrada no banco de dados
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: LISTAR
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler listarOS
+INFORMAÇÕES: Listando todas as OS
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: CADASTRAR
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler cadastrarOS
+INFORMAÇÕES: Cadastrando OS: OS Teste 158
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler cadastrarOS
+INFORMAÇÕES: OS 158 cadastrada com sucesso
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: LISTAR
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler listarOS
+INFORMAÇÕES: Listando todas as OS
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: CADASTRAR
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler cadastrarOS
+INFORMAÇÕES: Cadastrando OS: OS Teste 183
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler cadastrarOS
+INFORMAÇÕES: OS 183 cadastrada com sucesso
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: LISTAR
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler listarOS
+INFORMAÇÕES: Listando todas as OS
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: CONSULTAR
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: Consultando OS com código: 5
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 5 adicionada à cache
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 5 encontrada no banco de dados
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: ALTERAR
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler alterarOS
+INFORMAÇÕES: Alterando OS: 5
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler alterarOS
+INFORMAÇÕES: OS 5 alterada com sucesso
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: LISTAR
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler listarOS
+INFORMAÇÕES: Listando todas as OS
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: CONSULTAR
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: Consultando OS com código: 10
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 10 adicionada à cache
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 10 encontrada no banco de dados
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: REMOVER
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler removerOS
+INFORMAÇÕES: Removendo OS: 10
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler removerOS
+INFORMAÇÕES: OS 10 removida com sucesso
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: LISTAR
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler listarOS
+INFORMAÇÕES: Listando todas as OS
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: CONSULTAR
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: Consultando OS com código: 10
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler consultarOS
+INFORMAÇÕES: OS 10 não encontrada
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: REMOVER
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler removerOS
+INFORMAÇÕES: Removendo OS: 20
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler removerOS
+INFORMAÇÕES: OS 20 removida com sucesso
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler run
+INFORMAÇÕES: Comando recebido: LISTAR
+mar. 10, 2025 8:57:51 PM ApplicationServer$ClientHandler listarOS
+INFORMAÇÕES: Listando todas as OS
+mar. 11, 2025 5:10:46 PM ApplicationServer inicializarBaseDados
+INFORMAÇÕES: Base de dados inicializada com 100 ordens de serviço.
+mar. 11, 2025 5:10:46 PM ApplicationServer main
+INFORMAÇÕES: Servidor de Aplicação iniciado na porta 8001
