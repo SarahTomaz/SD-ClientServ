@@ -4,31 +4,29 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.net.ServerSocket;
 import java.net.Socket;
 
 public class LocationClient {
-    private final String locationServerIP;
-    private final int locationServerPort;
+    private final int proxyLocalizationServicePort = 65478;
     
-    public LocationClient(String locationServerIP, int locationServerPort) {
-        this.locationServerIP = locationServerIP;
-        this.locationServerPort = locationServerPort;
-    }
-    
-    public String[] getApplicationServerAddress() throws IOException {
+    public void getApplicationServerAddress() throws IOException {
         Socket socket = null;
         PrintWriter out = null;
         BufferedReader in = null;
+
+
         
         try {
-            socket = new Socket(locationServerIP, locationServerPort);
+            ServerSocket serverSocket = new ServerSocket(proxyLocalizationServicePort);
+            socket = serverSocket.accept();
+
             out = new PrintWriter(socket.getOutputStream(), true);
             in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             
             out.println("GET_APPLICATION_SERVER");
-            String response = in.readLine();
             
-            return response.split(":");
+            serverSocket.close();
         } finally {
             if (in != null) in.close();
             if (out != null) out.close();

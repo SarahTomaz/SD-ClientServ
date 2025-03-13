@@ -2,7 +2,6 @@ package org.proxy.threads;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.EOFException;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -13,52 +12,41 @@ import java.util.Date;
 
 public class ProxyThread implements Runnable {
     private Socket clientSocket;
-    private BufferedReader clientInput;
+    private String clientInput;
     private PrintWriter clientOutput;
 
     private String appServerIp;           // IP do servidor de aplicação
     private int appServerPort;            // Porta do servidor de aplicação
     private File logFile;
 
-    public ProxyThread(Socket clientSocket, File file, String appServerIp, int appServerPort) {
+    public ProxyThread(Socket clientSocket, File file, String appServerIp, int appServerPort, String readLine, PrintWriter clientOutput) {
         this.clientSocket = clientSocket;
         this.logFile = file;
         this.appServerIp = appServerIp;
         this.appServerPort = appServerPort;
-
-        try {
-            this.clientInput =
-                    new BufferedReader(
-                            new InputStreamReader(clientSocket.getInputStream()));
-            this.clientOutput =
-                    new PrintWriter(clientSocket.getOutputStream(), true);
-        } catch (IOException e) {
-            System.out.println("Erro ao inicializar streams: " + e.getMessage());
-        }
+        
+        this.clientInput = readLine;
+        this.clientOutput = clientOutput;
     }
 
     @Override
     public void run() {
         try {
-            while (true) {
-                String request = clientInput.readLine();
-                if (request == null) {
-                    break; // Cliente desconectou
-                }
+            String request = this.clientInput;
+            String response = processarRequisicao(request);
 
-                String response = processarRequisicao(request);
+            // pegar o json e enviar para o cache
 
-                clientOutput.println(response);
-                clientOutput.flush();
-            }
-        } catch (EOFException e) {
-            System.out.println("Cliente desconectou-se.");
-        } catch (IOException e) {
-            System.out.println("Erro na comunicação: " + e.getMessage());
+            final JsonObject jsonObject = JsonParser.parseString(response).getAsJsonObject();
+
+            final String cache_id = jsonObject.get("cache_id").getAsString();
+
+
+            clientOutput.println(response);
+            clientOutput.flush();
         } finally {
             // Fechar conexão
             try {
-                if (clientInput != null) clientInput.close();
                 if (clientOutput != null) clientOutput.close();
                 if (clientSocket != null) clientSocket.close();
             } catch (IOException e) {

@@ -1,7 +1,5 @@
 package org.example;
 
-import com.google.gson.JsonObject;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -9,12 +7,14 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
 
+import com.google.gson.JsonObject;
+
 public class ServiceOrderClient {
     private static final String LOCATION_SERVER_HOST = "localhost";
     private static final int LOCATION_SERVER_PORT = 8000;
 
-    private String applicationServerHost;
-    private int applicationServerPort;
+    private String applicationServerProxyHost;
+    private int applicationServerProxyPort;
     private Scanner scanner;
 
     public ServiceOrderClient() {
@@ -30,9 +30,9 @@ public class ServiceOrderClient {
             out.println("GET_APPLICATION_SERVER");
             String response = in.readLine();
             String[] serverInfo = response.split(":");
-            this.applicationServerHost = serverInfo[0];
-            this.applicationServerPort = Integer.parseInt(serverInfo[1]);
-            System.out.println("Servidor de aplicação encontrado em " + applicationServerHost + ":" + applicationServerPort);
+            this.applicationServerProxyHost = serverInfo[0];
+            this.applicationServerProxyPort = Integer.parseInt(serverInfo[1]);
+            System.out.println("Servidor de aplicação encontrado em " + applicationServerProxyHost + ":" + applicationServerProxyPort);
         } catch (IOException e) {
             System.err.println("Erro ao conectar ao servidor de localização: " + e.getMessage());
             System.exit(1);
@@ -41,7 +41,7 @@ public class ServiceOrderClient {
 
     private String sendRequest(String request) {
         try (
-                Socket socket = new Socket(applicationServerHost, applicationServerPort);
+                Socket socket = new Socket(applicationServerProxyHost, applicationServerProxyPort);
                 PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
                 BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()))
         ) {
@@ -66,7 +66,7 @@ public class ServiceOrderClient {
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("operation", "list");
         String operation = jsonObject.toString();
-
+        System.out.println(operation);
         String result = sendRequest(operation);
         System.out.println("\nList all service orders:");
         System.out.println(result);

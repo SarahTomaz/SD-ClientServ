@@ -1,18 +1,21 @@
 package org.example;
 
-import org.example.serializers.ServerInfo;
-
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
+import org.example.serializers.ServerInfo;
+
 public class LocationServer {
     private static final int PORT = 8000;
     private static final String APP_SERVER_ADDRESS = "localhost";
-    private static final int APP_SERVER_PORT = 56789;
+    private static final int APP_SERVER_PORT = 54321;
 
     private static final Logger logger = Logger.getLogger("LocationServerLog");
 

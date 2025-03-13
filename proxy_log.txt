@@ -1,0 +1,12 @@
+Thu Mar 13 20:25:47 BRT 2025 - Requisição: {"operation":"list"} - Thu Mar 13 20:25:47 BRT 2025
+Thu Mar 13 20:25:47 BRT 2025 - ERRO: Connection reset
+Thu Mar 13 20:27:13 BRT 2025 - Requisição: {"operation":"list"} - Thu Mar 13 20:27:13 BRT 2025
+Thu Mar 13 20:27:13 BRT 2025 - ERRO: Connection refused: connect
+Thu Mar 13 20:27:35 BRT 2025 - Requisição: {"operation":"list"} - Thu Mar 13 20:27:35 BRT 2025
+Thu Mar 13 20:28:34 BRT 2025 - ERRO: Connection reset
+Thu Mar 13 20:29:06 BRT 2025 - Requisição: {"operation":"list"} - Thu Mar 13 20:29:06 BRT 2025
+Thu Mar 13 20:30:21 BRT 2025 - ERRO: Connection reset
+Thu Mar 13 20:30:26 BRT 2025 - Requisição: {"operation":"list"} - Thu Mar 13 20:30:26 BRT 2025
+Thu Mar 13 20:31:04 BRT 2025 - ERRO: Connection reset
+Thu Mar 13 20:40:18 BRT 2025 - Requisição: {"operation":"list"} - Thu Mar 13 20:40:17 BRT 2025
+Thu Mar 13 20:40:30 BRT 2025 - ERRO: Connection reset

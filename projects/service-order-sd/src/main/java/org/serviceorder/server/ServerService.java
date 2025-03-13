@@ -1,8 +1,5 @@
 package org.serviceorder.server;
 
-import com.google.gson.Gson;
-import com.google.gson.JsonObject;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -10,12 +7,11 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.sql.SQLException;
-import java.util.Date;
 
 public class ServerService {
 
     private static final String server = "localhost";
-    private static final int port = 56789;
+    private static final int port = 54322;
 
     public void initializeServer() {
         try (ServerSocket serverSocket = new ServerSocket(port)) {
