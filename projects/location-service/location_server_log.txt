@@ -1,0 +1,178 @@
+Mar 11, 2025 8:39:03 PM org.example.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 11, 2025 8:40:52 PM org.example.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 11, 2025 8:41:39 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 192.0.0.2
+Mar 11, 2025 8:41:39 PM org.example.LocationServer$ClientHandler run
+SEVERE: Erro ao processar requisição do cliente: invalid stream header: 4745545F
+Mar 11, 2025 8:41:50 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 192.0.0.2
+Mar 11, 2025 8:41:50 PM org.example.LocationServer$ClientHandler run
+SEVERE: Erro ao processar requisição do cliente: invalid stream header: 4745545F
+Mar 11, 2025 8:46:10 PM org.example.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 11, 2025 8:46:51 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 192.0.0.2
+Mar 11, 2025 8:46:51 PM org.example.LocationServer$ClientHandler run
+SEVERE: Erro ao processar requisição do cliente: invalid stream header: 4745545F
+Mar 11, 2025 8:48:02 PM org.example.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 11, 2025 8:48:10 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 8:48:10 PM org.example.LocationServer$ClientHandler run
+SEVERE: Erro ao processar requisição do cliente: invalid stream header: 4745545F
+Mar 11, 2025 8:48:19 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 8:48:19 PM org.example.LocationServer$ClientHandler run
+SEVERE: Erro ao processar requisição do cliente: invalid stream header: 4745545F
+Mar 11, 2025 8:50:07 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 8:50:07 PM org.example.LocationServer$ClientHandler run
+SEVERE: Erro ao processar requisição do cliente: invalid stream header: 4745545F
+Mar 11, 2025 8:50:19 PM org.example.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 11, 2025 8:50:28 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 8:50:28 PM org.example.LocationServer$ClientHandler run
+SEVERE: Erro ao processar requisição do cliente: invalid stream header: 4745545F
+Mar 11, 2025 8:51:14 PM org.example.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 11, 2025 8:51:21 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 8:51:21 PM org.example.LocationServer$ClientHandler run
+SEVERE: Erro ao processar requisição do cliente: invalid stream header: 4745545F
+Mar 11, 2025 8:52:53 PM org.example.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 11, 2025 8:52:59 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 8:52:59 PM org.example.LocationServer$ClientHandler run
+SEVERE: Erro ao processar requisição do cliente: invalid stream header: 4745545F
+Mar 11, 2025 8:55:01 PM org.example.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 11, 2025 8:55:10 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 8:55:10 PM org.example.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 11, 2025 8:55:10 PM org.example.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 11, 2025 8:55:31 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 8:55:31 PM org.example.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 11, 2025 8:55:31 PM org.example.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 11, 2025 8:56:50 PM org.example.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 11, 2025 8:57:03 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 8:57:03 PM org.example.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 11, 2025 8:57:03 PM org.example.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 11, 2025 9:02:38 PM org.example.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 11, 2025 9:02:45 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:03:12 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:03:35 PM org.example.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 11, 2025 9:03:46 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:08:53 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:09:04 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:09:16 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:09:21 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:09:24 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:09:30 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:09:45 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:10:31 PM org.example.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 11, 2025 9:10:37 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:10:59 PM org.example.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 11, 2025 9:11:06 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:12:15 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:12:28 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:12:36 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:13:31 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:13:47 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:14:07 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:14:24 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:15:26 PM org.example.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 11, 2025 9:15:33 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:50:27 PM org.example.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 11, 2025 9:50:39 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:50:39 PM org.example.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 11, 2025 9:50:39 PM org.example.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 11, 2025 9:51:20 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:51:20 PM org.example.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 11, 2025 9:51:20 PM org.example.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 11, 2025 9:51:24 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 9:51:24 PM org.example.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 11, 2025 9:51:24 PM org.example.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 11, 2025 10:30:25 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 10:30:25 PM org.example.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 11, 2025 10:30:25 PM org.example.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 11, 2025 10:40:04 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 10:40:04 PM org.example.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 11, 2025 10:40:04 PM org.example.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 11, 2025 10:49:53 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 10:49:53 PM org.example.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 11, 2025 10:49:53 PM org.example.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 11, 2025 11:03:37 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 11, 2025 11:03:37 PM org.example.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 11, 2025 11:03:37 PM org.example.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 12, 2025 9:34:58 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 12, 2025 9:34:58 PM org.example.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 12, 2025 9:34:58 PM org.example.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 12, 2025 9:43:05 PM org.example.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 12, 2025 9:43:05 PM org.example.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 12, 2025 9:43:05 PM org.example.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
