@@ -1,6 +1,13 @@
 package org.proxy.threads;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.EOFException;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Date;
 
@@ -35,6 +42,9 @@ public class ProxyThread implements Runnable {
         try {
             while (true) {
                 String request = clientInput.readLine();
+                if (request == null) {
+                    break; // Cliente desconectou
+                }
 
                 String response = processarRequisicao(request);
 
@@ -70,17 +80,21 @@ public class ProxyThread implements Runnable {
         String resposta = "";
 
         try {
+            // Conexão com o servidor de aplicação
             serverSocket = new Socket(appServerIp, appServerPort);
 
-            serverInput =
-                    new BufferedReader(
-                            new InputStreamReader(clientSocket.getInputStream()));
-            serverOutput =
-                    new PrintWriter(clientSocket.getOutputStream(), true);
+            /*
+            * Troquei clientSocket por serverSocket
+            * O clientSocket é a conexão com o cliente, e o serverSocket é a conexão com o servidor de aplicação.
+            * A comunicação com o servidor de aplicação é feita através do serverSocket, que é a conexão estabelecida com o servidor de aplicação. */
+            serverOutput = new PrintWriter(serverSocket.getOutputStream(), true);
+            serverInput = new BufferedReader(new InputStreamReader(serverSocket.getInputStream()));
 
+            // Envia requisição para o servidor de aplicação
             serverOutput.println(requisicao);
             serverOutput.flush();
 
+            // Recebe resposta do servidor de aplicação
             resposta = serverInput.readLine();
 
             // Log da operação
@@ -88,6 +102,7 @@ public class ProxyThread implements Runnable {
 
         } catch (IOException e) {
             registrarLog("ERRO: " + e.getMessage());
+            resposta = "ERRO: " + e.getMessage(); // Retorna erro para o cliente
         } finally {
             // Fechar conexão
             try {
