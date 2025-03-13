@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="064ede25-20ce-4f5d-809a-84e82b695669" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/serviceorder/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/serviceorder/controller/LogRegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/serviceorder/controller/ServiceOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/serviceorder/controller/dto/LogRegisterDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/serviceorder/controller/dto/ServiceOrderDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/serviceorder/database/ConnectionJDBC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/serviceorder/database/dao/BaseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/serviceorder/database/dao/LogRegisterDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/serviceorder/database/dao/ServiceOrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/serviceorder/database/entities/LogRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/serviceorder/database/entities/ServiceOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/serviceorder/database/services/LogRegisterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/serviceorder/database/services/ServiceOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/serviceorder/server/RequestModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/serviceorder/server/RequestRedirect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/serviceorder/server/ServerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2u6QxMbFEtmgfFPlWM1Cq8xCCEd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/vitorrafael/IdeaProjects/service-order-sd",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/org/serviceorder" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="service-order-sd" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="064ede25-20ce-4f5d-809a-84e82b695669" name="Changes" comment="" />
+      <created>1741566789379</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741566789379</updated>
+      <workItem from="1741566790376" duration="232000" />
+      <workItem from="1741567078169" duration="37380000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/serviceorder/controller/ServiceOrderController.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/serviceorder/controller/ServiceOrderController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/serviceorder/database/entities/ServiceOrder.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/serviceorder/database/dao/ServiceOrderDao.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/serviceorder/server/RequestRedirect.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
