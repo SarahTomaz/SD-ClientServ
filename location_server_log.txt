@@ -22,3 +22,11 @@ mar. 13, 2025 8:40:14 PM org.example.LocationServer$ClientHandler run
 INFORMAÇÕES: Requisição recebida: GET_APPLICATION_SERVER
 mar. 13, 2025 8:40:14 PM org.example.LocationServer$ClientHandler run
 INFORMAÇÕES: Endereço do servidor de aplicação enviado para: 127.0.0.1
+mar. 14, 2025 4:00:43 PM org.example.LocationServer main
+INFORMAÇÕES: Servidor de Localização iniciado na porta 8000
+mar. 14, 2025 4:00:59 PM org.example.LocationServer main
+INFORMAÇÕES: Nova conexão de cliente: 127.0.0.1
+mar. 14, 2025 4:00:59 PM org.example.LocationServer$ClientHandler run
+INFORMAÇÕES: Requisição recebida: GET_APPLICATION_SERVER
+mar. 14, 2025 4:00:59 PM org.example.LocationServer$ClientHandler run
+INFORMAÇÕES: Endereço do servidor de aplicação enviado para: 127.0.0.1

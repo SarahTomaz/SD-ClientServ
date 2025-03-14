@@ -10,3 +10,10 @@ Thu Mar 13 20:30:26 BRT 2025 - Requisição: {"operation":"list"} - Thu Mar 13 2
 Thu Mar 13 20:31:04 BRT 2025 - ERRO: Connection reset
 Thu Mar 13 20:40:18 BRT 2025 - Requisição: {"operation":"list"} - Thu Mar 13 20:40:17 BRT 2025
 Thu Mar 13 20:40:30 BRT 2025 - ERRO: Connection reset
+Fri Mar 14 16:01:09 BRT 2025 - CACHE MISS para operação: list [Chave: list]
+Fri Mar 14 16:01:09 BRT 2025 - Requisição: {"operation":"list"} - Fri Mar 14 16:01:09 BRT 2025
+Fri Mar 14 16:01:09 BRT 2025 - ERRO: Connection reset
+Fri Mar 14 16:01:09 BRT 2025 - Estado atual da cache:
+Tamanho: 1/30
+0: list
+

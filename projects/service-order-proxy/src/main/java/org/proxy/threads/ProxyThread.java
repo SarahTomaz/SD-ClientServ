@@ -9,6 +9,11 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Date;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 
 public class ProxyThread implements Runnable {
     private Socket clientSocket;
@@ -18,6 +23,15 @@ public class ProxyThread implements Runnable {
     private String appServerIp;           // IP do servidor de aplicação
     private int appServerPort;            // Porta do servidor de aplicação
     private File logFile;
+    
+    // Cache FIFO
+    private static final int CACHE_SIZE = 30;
+    private static final Map<String, String> cache = new LinkedHashMap<String, String>(CACHE_SIZE + 1, 0.75f, false) {
+        @Override
+        protected boolean removeEldestEntry(Map.Entry<String, String> eldest) {
+            return size() > CACHE_SIZE; 
+        }
+    };
 
     public ProxyThread(Socket clientSocket, File file, String appServerIp, int appServerPort, String readLine, PrintWriter clientOutput) {
         this.clientSocket = clientSocket;
@@ -33,17 +47,53 @@ public class ProxyThread implements Runnable {
     public void run() {
         try {
             String request = this.clientInput;
-            String response = processarRequisicao(request);
+            String response;
+            
+            // Chama o método generateCacheKey
+            JsonObject requestJson = JsonParser.parseString(request).getAsJsonObject();
+            String operation = requestJson.get("operation").getAsString();
+            
+            // Gerar uma chave de cache baseada na operação e seus parâmetros
+            String cacheKey = generateCacheKey(requestJson);
+            
+            // Verificar se é uma operação de leitura
+            boolean isReadOperation = "list".equals(operation) || "list_quantity".equals(operation);
+            
+            if (isReadOperation) {
+                // Verificar se a resposta está na cache
+                synchronized (cache) {
+                    if (cache.containsKey(cacheKey)) {
+                        registrarLog("CACHE HIT para operação: " + operation + " [Chave: " + cacheKey + "]");
+                        response = cache.get(cacheKey);
+                    } else {
+                        registrarLog("CACHE MISS para operação: " + operation + " [Chave: " + cacheKey + "]");
+                        // Se não estiver na cache, comunicar com o servidor
+                        response = processarRequisicao(request);
+                        
+                        // Armazenar o resultado na cache
+                        cache.put(cacheKey, response);
+                    }
+                }
+            } else {
+                // Operações de escrita invalidam a cache para "list" e "list_quantity"
+                if ("add".equals(operation) || "update".equals(operation) || "delete".equals(operation)) {
+                    invalidateCache();
+                    registrarLog("Cache invalidada após operação de escrita: " + operation);
+                }
+                
+                // Processar a requisição normalmente
+                response = processarRequisicao(request);
+            }
 
-            // pegar o json e enviar para o cache
-
-            final JsonObject jsonObject = JsonParser.parseString(response).getAsJsonObject();
-
-            final String cache_id = jsonObject.get("cache_id").getAsString();
-
-
+            printCacheStatus();
+            
+            // Enviar resposta para o cliente
             clientOutput.println(response);
             clientOutput.flush();
+            
+        } catch (Exception e) {
+            registrarLog("Erro no processamento da requisição: " + e.getMessage());
+            e.printStackTrace();
         } finally {
             // Fechar conexão
             try {
@@ -55,12 +105,52 @@ public class ProxyThread implements Runnable {
         }
     }
 
+     // Gera uma chave única para cache baseada na operação e seus parâmetros
+    private String generateCacheKey(JsonObject requestJson) {
+        String operation = requestJson.get("operation").getAsString();
+        StringBuilder key = new StringBuilder(operation);
+        
+        // Adicionar parâmetros específicos na chave dependendo da operação
+        if (requestJson.has("id")) {
+            key.append("_id_").append(requestJson.get("id").getAsString());
+        }
+        if (requestJson.has("code") && ("list".equals(operation) || "list_quantity".equals(operation))) {
+            key.append("_code_").append(requestJson.get("code").getAsString());
+        }
+        
+        return key.toString();
+    }
+    
+    // Invalida entradas da cache relacionadas a operações de listagem
+    private synchronized void invalidateCache() {
+        synchronized (cache) {
+            // Remover todas as entradas que começam com "list" ou "list_quantity"
+            cache.entrySet().removeIf(entry -> 
+                entry.getKey().startsWith("list") || entry.getKey().startsWith("list_quantity"));
+        }
+    }
+    
+
+    // Exibe o estado atual da cache no log
+    private void printCacheStatus() {
+        StringBuilder sb = new StringBuilder("Estado atual da cache:\n");
+        
+        synchronized (cache) {
+            sb.append("Tamanho: ").append(cache.size()).append("/").append(CACHE_SIZE).append("\n");
+            int count = 0;
+            for (Map.Entry<String, String> entry : cache.entrySet()) {
+                sb.append(count++).append(": ").append(entry.getKey()).append("\n");
+            }
+        }
+        
+        registrarLog(sb.toString());
+    }
+
     private String processarRequisicao(String requisicao) {
         registrarLog("Requisição: " + requisicao + " - " + new Date());
         return comunicarComServidor(requisicao);
     }
 
-    // Método para comunicar com o servidor de aplicação
     private String comunicarComServidor(String requisicao) {
         Socket serverSocket = null;
         PrintWriter serverOutput = null;
@@ -71,10 +161,6 @@ public class ProxyThread implements Runnable {
             // Conexão com o servidor de aplicação
             serverSocket = new Socket(appServerIp, appServerPort);
 
-            /*
-            * Troquei clientSocket por serverSocket
-            * O clientSocket é a conexão com o cliente, e o serverSocket é a conexão com o servidor de aplicação.
-            * A comunicação com o servidor de aplicação é feita através do serverSocket, que é a conexão estabelecida com o servidor de aplicação. */
             serverOutput = new PrintWriter(serverSocket.getOutputStream(), true);
             serverInput = new BufferedReader(new InputStreamReader(serverSocket.getInputStream()));
 
@@ -111,6 +197,7 @@ public class ProxyThread implements Runnable {
              PrintWriter pw = new PrintWriter(bw)) {
 
             pw.println(new Date() + " - " + mensagem);
+            System.out.println(new Date() + " - " + mensagem); // Também exibe no console para depuração
 
         } catch (IOException e) {
             System.out.println("Erro ao escrever no log: " + e.getMessage());
